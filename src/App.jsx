@@ -34,7 +34,7 @@ useEffect(() => {
 function Search(){
 const searchedArray = product.filter((item)=>{
  
-  if(item.title.includes(inputValue)){
+  if(item.title.toLowerCase().includes(inputValue.toLowerCase())){
     return item
   }
 
